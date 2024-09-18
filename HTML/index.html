@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YOLO Model Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">AgroLense Dashboard</div>
+            <ul class="nav-links">
+                <li><a href="#dashboard">Dashboard</a></li>
+                <li><a href="#live-feed">Live Feed</a></li>
+                <li><a href="#history">History</a></li>
+                <li><a href="#settings">Settings</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="dashboard" class="section">
+            <h1>Dashboard Overview</h1>
+            <div class="stats-grid">
+                <div class="stat-box">Total Detections: __</div>
+                <div class="stat-box">Confidence Level: __%</div>
+                <div class="stat-box">Recent Activity</div>
+            </div>
+        </section>
+
+        <section id="live-feed" class="section">
+            <h1>Live Feed</h1>
+            <div class="live-container">
+                <video class="live-video" controls autoplay src="./Assests/VID-20240902-WA0001.mp4"></video>
+                <div class="log">
+                    <h2>Detection Log</h2>
+                    <ul>
+                        <li>Person detected - %</li>
+                        <li>Car detected - %</li>
+                        <li>Dog detected - %</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="history" class="section">
+            <h1>History & Reports</h1>
+            <div class="filter-options">
+                <label for="date">Date:</label>
+                <input type="date" id="date" name="date">
+                <label for="object-type">Object Type:</label>
+                <select id="object-type" name="object-type">
+                    <option value="all">All</option>
+                    <option value="crop">Crop</option>
+                    <option value="water">Water</option>
+                    <option value="person">Person</option>
+                    <option value="animal">Animal</option>
+                    <option value="vehicle">Vehicles</option>
+                </select>
+            </div>
+            <div class="history-timeline">
+                <!-- Timeline or history log here -->
+            </div>
+        </section>
+
+        <section id="settings" class="section">
+            <h1>Settings & Customization</h1>
+            <div class="settings-container">
+                <!-- Settings form here -->
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 AgroLense YOLO Dashboard</p>
+    </footer>
+</body>
+</html>

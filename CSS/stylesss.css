@@ -1,0 +1,166 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+.navbar {
+    background-color: #333;
+    color: #fff;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar .logo {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.navbar .nav-links {
+    list-style: none;
+}
+
+.navbar .nav-links li {
+    display: inline;
+    margin: 0 10px;
+}
+
+.navbar .nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.section {
+    padding: 20px;
+    margin: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+}
+
+.stats-grid {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.stat-box {
+    background-color: #ddd;
+    padding: 15px;
+    border-radius: 5px;
+    text-align: center;
+    width: 30%;
+}
+
+.live-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.live-video {
+    width: 70%;
+    border-radius: 5px;
+}
+
+.log {
+    width: 25%;
+    background-color: #f9f9f9;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+.log ul {
+    list-style: none;
+    padding: 10px 0;
+}
+
+.log li {
+    padding: 8px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.filter-options {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.filter-options label {
+    margin-right: 10px;
+}
+
+.settings-container {
+    padding: 15px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    /* position: fixed; */
+    width: 100%;
+    bottom: 0;
+}
+
+/* Media Queries for Mobile Devices */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .navbar .nav-links li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    .stats-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .stat-box {
+        width: 80%;
+        margin-bottom: 20px;
+    }
+
+    .live-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .live-video {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .log {
+        width: 100%;
+    }
+
+    .filter-options {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .filter-options label {
+        margin-bottom: 10px;
+    }
+
+    footer {
+        position: static;
+        margin-top: 20px;
+    }
+}
